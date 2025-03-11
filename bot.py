@@ -37,24 +37,6 @@ async def servidor(ctx):
 
     await ctx.send(embed=embed)
 
-
-@client.command()
-async def oi(ctx):
-    if ctx.author.id == 178511092635533312:
-        especial = ', O Mono Tatu'
-    elif ctx.author.id == 693518321571856474:
-        especial = ', para os íntimos, Fabin'
-    elif ctx.author.id == 328221656244027396:
-        especial = ', O Meu Bisavô'
-    elif ctx.author.id == 355847602861899787:
-        especial = ', A Fluente Em Girafês'
-    elif ctx.author.id == 322158183772717056:
-        especial = ', O Famoso Pegador De Véia'
-    else:
-        especial = ''
-    await ctx.send(f'Olá, {ctx.author.mention}{especial}!')
-
-
 @client.command()
 async def ajuda(ctx):
     bot_name = str(client.user.name)
